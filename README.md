@@ -12,10 +12,9 @@ This repo has not been tested over imagery that has black pixels outside of boun
 
 **step1:** Mount your google drive 
       ```from google.colab import drive
-      drive.mount('/content/drive')```
+         drive.mount('/content/drive')```
       
 **step2:** clone the github repository
-
       ```!git clone https://github.com/BishwaBS/AMOEG.git```
 
 **step3:** set your cloned directory as current working directory
