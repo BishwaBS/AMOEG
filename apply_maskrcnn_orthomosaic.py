@@ -51,7 +51,7 @@ from shapely.geometry import Point, Polygon
 import glob
 from detectron2.data.datasets import register_coco_instances
 
-
+#defining the predictor instance of maskrcnn. You can change the configs here. For example, change the number of classes to 3 instead of 1
 def define_predictor(modelfile):
     trainname = "train" + str(random.randint(0, 10000000))
     valname = "val" + str(random.randint(0, 100000000))
@@ -187,8 +187,6 @@ def inference_raster(predictor, imglist, rast, start_coords_list, lonScale, latS
 
 
 def dftoshapefile (df, outputdir, crsdata, plotname):
-      
-
     outputname=os.path.join(os.getcwd(), outputdir, plotname +".shp" )
 
     ##convert the longitude and latitude to shapely point format
@@ -230,16 +228,6 @@ def apply_model_mosaic(raster_dir, partition_number, modelfile, outputdir):
           # break
 
     print("..............process completed..........................")
-
-def str2bool(v):
-    if isinstance(v, bool):
-        return v
-    if v.lower() in ('yes', 'true', 't', 'y', '1'):
-        return True
-    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
-        return False
-    else:
-        raise argparse.ArgumentTypeError('Boolean value expected.')    
 
 
 def main():
