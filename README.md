@@ -16,6 +16,8 @@ This repo has not been tested over imagery that has black pixels outside of boun
       
 **step2:** clone the github repository
 
+      ```!git clone https://github.com/BishwaBS/AMOEG.git```
+
 **step3:** set your cloned directory as current working directory
       ```import os```
       ```os.chdir("path to your cloned directory")```
