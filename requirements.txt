@@ -1,7 +1,7 @@
 torch==1.5 
 torchvision==0.6 -f https://download.pytorch.org/whl/cu101/torch_stable.html
 cython 
-pyyaml==5.1 
+pyyaml==5.4 
 git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 fvcore
 rasterio 
