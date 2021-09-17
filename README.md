@@ -9,6 +9,7 @@ This repo has not been tested over imagery that has black pixels outside of boun
 **How to use:**
 
 **If you are using colab:**
+
 **step1:** Mount your google drive 
       ```from google.colab import drive
       drive.mount('/content/drive')```
@@ -25,3 +26,5 @@ This repo has not been tested over imagery that has black pixels outside of boun
 **step5:** run the process
       ```!python apply_maskrcnn_orthomosaic.py --raster_dir <path to your raster directory> --modeldir <relative path to your modeldirectory that contains .pth and metrics.json files --partition number <int> (specify value (int) based on how many splits you want to make the mosaick imagery into" --outputdir <relative path to output directory where you want to save your shapefiles```
       
+**If you are using your local machine**
+First create a virtual environment using conda or other parties. After virtual environmet has been setup, follow all the steps from **step 2** as mentioned above
