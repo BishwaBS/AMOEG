@@ -23,5 +23,5 @@ This repo has not been tested over imagery that has black pixels outside of boun
       ```!pip install -r requirements.txt```
 
 **step5:** run the process
-      ```!python apply_maskrcnn_orthomosaic.py --raster_dir <path to your raster directory> --modelfile <relative path to your modelfile (usuall it ends with .pth) --partition number <int> (specify value (int) based on how many splits you want to make the mosaick imagery into" --outputdir <relative path to output directory where you want to save your shapefiles```
+      ```!python apply_maskrcnn_orthomosaic.py --raster_dir <path to your raster directory> --modeldir <relative path to your modeldirectory that contains .pth and metrics.json files --partition number <int> (specify value (int) based on how many splits you want to make the mosaick imagery into" --outputdir <relative path to output directory where you want to save your shapefiles```
       
